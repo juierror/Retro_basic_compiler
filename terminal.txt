@@ -1,0 +1,12 @@
+EOF
+id
+const
+line_num
++
+-
+=
+<
+IF
+PRINT
+GOTO
+STOP
