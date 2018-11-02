@@ -6,4 +6,5 @@
 60 A = A + 1
 70 IF J < 10 50
 80 IF I < 10 40
+95 PRINT A
 90 STOP
