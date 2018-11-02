@@ -77,8 +77,12 @@ s.push(startSymbol)
 index = 0
 
 def updateOutput(type,val):
-    global output
+    global output,valid
     if type == 'line_num':
+        if val < 1 or val > 1000:
+            valid = False
+            print("line_num out of range.")
+            return
         if len(output) > 0 and output[-1] == 14:
             output.append(val)
         elif len(output) > 7 and output[-8] == 13:
@@ -91,6 +95,10 @@ def updateOutput(type,val):
         output.append(11)
         output.append(val+1)
     elif type == 'const':
+        if val < 0 or val > 100:
+            valid = False
+            print("const out of range.")
+            return
         output.append(12)
         output.append(val)
     elif type == 'IF':
@@ -162,6 +170,8 @@ while index <= len(stream)-1 and not s.isEmpty():
     type,value = token
     if top in terminal and match(top,type):
         updateOutput(top,value)
+        if not valid:
+            break
         s.pop()
         index += 1
     elif top in non_terminal:
