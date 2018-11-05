@@ -14,7 +14,7 @@ course page: https://www.cp.eng.chula.ac.th/~piak/teaching/prolang/2018/index-pr
 1) put code in input.txt file
 2) open command line and use code below to run
 
-*** if use windows you must use ```python retrobasicv2.py``` instead of ```python3 retro_basicv2.py```
+*** if use windows you must use ```python retro_basicv2.py``` instead of ```python3 retro_basicv2.py```
 
 - code version 2 (main code)
 
