@@ -14,11 +14,15 @@ course page: https://www.cp.eng.chula.ac.th/~piak/teaching/prolang/2018/index-pr
 - version 2
 
 ```
-python retro_basicv2.py
+#in command line
+-> python retro_basicv2.py
 ```
+
+*** if the program version 2 has bug, please use version 1.
 
 - version 1
 
 ```
-python retro_basicv2.py
+#in command line
+-> python retro_basic.py
 ```
